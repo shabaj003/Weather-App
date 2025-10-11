@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surecast</title>
+    <link rel="stylesheet" href="./Forecast.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./cloud-sun-solid-full.svg" type="image/svg+xml">
+    <style>
+      a{
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+  <nav>
+        <article class="article">
+            <div>
+            <a href="" class="logo"><i class="fa-solid fa-cloud-sun"></i> Surecast</a>
+            </div>
+            
+        </article>
+        <article>
+            <a href="" class="icons">Home</a>
+            <a href="./Forecast.html" target="_blank" class="icons">Forecast</a>
+            <a href="./map.html" target="_blank" class="icons">Map</a>
+            <a href="./About.html" target="_blank" class="icons">About</a>
+        </article>
+    </nav>
+
+    <section class="bgvideo">
+  <video autoplay muted loop playsinline class="bgvideo-content">
+    <source src="./6804544-hd_1280_720_24fps.mp4" type="video/mp4">
+  </video>
+
+  <div class="bgvideo-overlay">
+     <div class="weather-box">
+    <h2>Forecast Weather</h2>
+    <input type="text" id="city" placeholder="Enter city name">
+    <button onclick="getWeather()">Search</button>
+    <div class="weather" id="weather"></div>
+  </div>
+  </div>
+</section>
+
+  <script src="./forecast.js"></script>
+
+</body>
+</html>

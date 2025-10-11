@@ -1,0 +1,128 @@
+html,body{
+  overflow: hidden;
+}
+.bgvideo {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bgvideo-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: contrast(120%) brightness(110%) saturate(120%);
+}
+
+.bgvideo-overlay {
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  width: 100%;
+  color: rgb(249, 246, 246);
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgvideo-overlay h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+.weather-box {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px 50px;
+      border-radius: 15px;
+      z-index: 2;
+    }
+
+
+.forecast-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;       
+  padding: 10px;
+  scroll-behavior: smooth;
+  max-width: 100%;        
+  box-sizing: border-box;
+}
+
+
+.forecast-container::-webkit-scrollbar {
+  height: 8px;
+}
+.forecast-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+
+.forecast-day {
+  flex: 0 0 auto;         
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  width: 150px;           
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.forecast-day:hover {
+  transform: scale(1.1);
+}
+
+.today-weather {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  width: 300px;            
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.today-weather img {
+  width: 80px;
+  height: 80px;
+}
+.bgvideo-overlay h2 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;    
+    width: 100%;          
+}
+
+.forecast-day h4 {
+    text-align: center;    
+    margin: 5px 0;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+    max-width: 90%;        
+    margin: 0 auto;       
+    box-sizing: border-box;
+}
+
+.search-box{
+    text-align: center; 
+}
