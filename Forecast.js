@@ -19,7 +19,7 @@ async function getWeather() {
                 <p>💨 Wind: ${data.current.wind_kph} kph</p>
                 <p>💧 Humidity: ${data.current.humidity}%</p>
                 <br>
-                <a href="Forecast1.html?city=${encodeURIComponent(city)}" class="forecast-link" target="_blank">
+                <a href="Forecast1.html?city=${encodeURIComponent(city)}" class="forecast-link">
                   🔎 See Full Week Forecast
                 </a>
             `;

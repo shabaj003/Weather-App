@@ -25,9 +25,9 @@
         </article>
         <article>
             <a href="" class="icons">Home</a>
-            <a href="./Forecast.html" target="_blank" class="icons">Forecast</a>
-            <a href="./map.html" target="_blank" class="icons">Map</a>
-            <a href="./About.html" target="_blank" class="icons">About</a>
+            <a href="./Forecast.html" class="icons">Forecast</a>
+            <a href="./map.html"  class="icons">Map</a>
+            <a href="./About.html"  class="icons">About</a>
         </article>
     </nav>
 
@@ -35,10 +35,10 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script>
-    // Initialize map centered on world view
+    
     var map = L.map('map').setView([20, 0], 2);
 
-    // Add OpenStreetMap tiles
+    
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
