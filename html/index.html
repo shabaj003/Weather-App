@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surecast</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="./css/Map.css">
+    <link rel="stylesheet" href="./css/Weather.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./assets/images/cloud-sun-solid-full.svg" type="image/svg+xml">
-    <style>
-      .a{
-        text-decoration: none;
-      }
-    </style>
+    <link rel="icon" href="./cloud-sun-solid-full.svg" type="image/svg+xml">
 </head>
-<body>
+<style>
+    a{
+        text-decoration: none;
+        color:white;
+    }
 
-  <nav>
+</style>
+<body>
+    <nav>
         <article class="article">
             <div>
             <a href="" class="logo"><i class="fa-solid fa-cloud-sun"></i> Surecast</a>
@@ -31,18 +31,15 @@
         </article>
     </nav>
 
-    <div id="map"></div>
+    <section class="bgvideo">
+  <video autoplay muted loop playsinline class="bgvideo-content">
+    <source src="./14217651-hd_1920_1080_30fps.mp4" type="video/mp4">
+  </video>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script>
-    
-    var map = L.map('map').setView([20, 0], 2);
-
-    
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-  </script>
+  <div class="bgvideo-overlay">
+    <h1>Surecast</h1>
+    <h2>Forecast today, enjoy your way.</h2>
+  </div>
+</section>
 </body>
 </html>
-
