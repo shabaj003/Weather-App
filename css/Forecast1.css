@@ -1,6 +1,54 @@
 html,body{
   overflow: hidden;
 }
+nav {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(23, 23, 7, 0.7);
+    display: flex;          
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+    z-index: 1; /* keep it above other content */
+    padding: 0 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* optional subtle shadow */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* optional border */
+}
+.icons{
+  color: rgb(248, 248, 244);
+}
+
+.icons:hover{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(241, 246, 100);
+  transform: scale(1.2);
+  /* text-shadow: 0 10px 20px rgba(0,0,0,0.5);  */
+  cursor: pointer;
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color:yellow;
+}
+article{
+    height: 75px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.article{
+    height: 75px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
 .bgvideo {
   position: relative;
   height: 100vh;
